@@ -1,0 +1,22 @@
+# 本地配置文件
+config.py
+
+# Python生成文件
+__pycache__/
+*.pyc
+
+# 测试文件
+*.test
+*.log
+
+# 环境文件
+.env
+.env.local
+.env.*.local
+
+# IDE文件
+.vscode/
+.idea/
+*.swp
+*.swo
+*~

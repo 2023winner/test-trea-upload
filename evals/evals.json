@@ -1,0 +1,23 @@
+{
+  "skill_name": "github-upload",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "使用GitHub上传技能，将test_upload.py文件上传到GitHub仓库test-skill-test，分支使用main",
+      "expected_output": "文件上传成功，返回GitHub文件URL",
+      "files": ["test_upload.py"]
+    },
+    {
+      "id": 2,
+      "prompt": "使用GitHub上传技能，创建一个新的GitHub仓库test-new-repo，然后上传test_upload.py文件",
+      "expected_output": "仓库创建成功，文件上传成功，返回仓库URL和文件URL",
+      "files": ["test_upload.py"]
+    },
+    {
+      "id": 3,
+      "prompt": "使用GitHub上传技能，将多个文件（test_upload.py和scripts/upload_to_github.py）上传到GitHub仓库test-multiple-files",
+      "expected_output": "所有文件上传成功，返回多个文件的GitHub URL",
+      "files": ["test_upload.py", "scripts/upload_to_github.py"]
+    }
+  ]
+}
